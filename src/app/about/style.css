@@ -1,0 +1,212 @@
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.content-left {
+    padding: 30px;
+    width: 700px;
+    box-shadow: -3px 1px 14px #a3a3a3;
+    z-index: 10;
+    margin-right: -25%;
+    background: #fff;
+}
+
+.content-left p {
+    text-align: justify;
+}
+
+.image-right {
+    height: 600px;
+    width: 700px;
+    overflow: hidden;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.image-right img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+}
+
+.image-right:hover img {
+    transform: scale(1.1);
+}
+
+/* Vision Section */
+.vision-section {
+    position: relative;
+    padding: 100px 0;
+    overflow: hidden;
+    margin-top: 80px;
+}
+
+.vision-section h2{
+    color: #fff !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1.5);
+}
+
+.vision-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(244, 164, 96, 0.1), rgba(244, 164, 96, 0.05)),
+        url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200') center/cover;
+    z-index: -1;
+    filter: brightness(0.95);
+}
+
+.vision-section .glass-card {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 8px 32px rgba(244, 164, 96, 0.1);
+    transition: all 0.3s ease;
+    line-height: 1.8;
+    color: #333;
+    font-size: 16px;
+}
+
+.vision-section .glass-card p{
+    text-align: justify;
+}
+
+.vision-section .glass-card:hover {
+    background: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 12px 40px rgba(244, 164, 96, 0.15);
+    transform: translateY(-3px);
+}
+
+/* Mission Section */
+.mission-section {
+    position: relative;
+    padding: 100px 0;
+    overflow: hidden;
+    margin-top: 80px;
+}
+
+.mission-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(244, 164, 96, 0.1), rgba(244, 164, 96, 0.05)),
+        url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200') center/cover;
+    z-index: -1;
+    filter: brightness(0.95);
+}
+
+.mission-section .glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 8px 32px rgba(244, 164, 96, 0.1);
+    transition: all 0.3s ease;
+    line-height: 1.8;
+    color: #333;
+    font-size: 16px;
+}
+
+.mission-section .glass-card:hover {
+    background: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 12px 40px rgba(244, 164, 96, 0.15);
+    transform: translateY(-3px);
+}
+
+/* Commitment Section */
+.commitment-section {
+    position: relative;
+    padding: 100px 0;
+    overflow: hidden;
+}
+
+
+.commitment-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    padding: 35px 25px;
+    text-align: center;
+    transition: all 0.3s ease;
+    margin-bottom: 30px;
+    height: 100%;
+}
+
+.commitment-card:hover {
+    background: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 12px 40px rgba(244, 164, 96, 0.15);
+    transform: translateY(-5px);
+}
+
+.commitment-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #d4a64f, #e9c44c);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 35px;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.commitment-card:hover .commitment-icon {
+    transform: scale(1.1) rotate(10deg);
+}
+
+.commitment-card h4 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+}
+
+.commitment-card:hover h4 {
+    color: #d4a64f;
+}
+
+.commitment-card p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Section Heading Adjustments */
+.section-heading h6 {
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    color: #333;
+    font-weight: bold;
+    font-size: 35px;
+    margin-top: 10px;
+}
+
+/* Text Center */
+.text-center {
+    text-align: center;
+}
+
+.mb-5 {
+    margin-bottom: 3rem;
+}

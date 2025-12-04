@@ -1,0 +1,22 @@
+{
+  "name": "ĐẠI NGUYÊN HOLDING - Tiên phong đầu tư bất động sản tại Việt Nam",
+  "short_name": "ĐẠI NGUYÊN",
+  "description": "Công ty TNHH Đầu tư và Dịch vụ ĐẠI NGUYÊN HOLDING là đơn vị tiên phong trong lĩnh vực đầu tư bất động sản tại Việt Nam, mang đến giải pháp toàn diện từ phát triển dự án, quản lý vận hành đến tư vấn tài chính.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#191B24",
+  "theme_color": "#FFD875",
+  "lang": "vi-VN",
+  "icons": [
+    {
+      "src": "/images/logo/favicon.ico",
+      "sizes": "48x48 72x72 96x96 128x128 256x256 512x512",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/images/logo/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
