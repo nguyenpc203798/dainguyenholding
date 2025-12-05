@@ -79,7 +79,7 @@ const TabContents = () => {
                   năng sinh lời bền vững trong dài hạn.
                 </p>
                 <div className="icon-button">
-                  <a href="property-details.html">
+                  <a href="/contact">
                     <i className="fa fa-calendar" /> Đặt lịch tham quan
                   </a>
                 </div>

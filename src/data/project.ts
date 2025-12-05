@@ -140,7 +140,7 @@ export const Projects: Project[] = [
         title: "LIÊN HỆ",
         content: [
           "Địa chỉ văn phòng: Số 09, đường Nguyễn Thị Nhung, KĐT Vạn Phúc, Phường Hiệp Bình, TP. HCM",
-          "Điện thoại: 0908 999 904 - Hỗ trợ 24/7",
+          "Điện thoại: 0779 075 168 - Hỗ trợ 24/7",
           "Email: dainguyenholding@gmail.com - Hỗ trợ tư vấn nhanh chóng",
           "Website: www.dainguyenholding.com",
           "Giờ làm việc: Thứ 2 - Thứ 7, 8:00 - 18:00 (Nghỉ Chủ Nhật)",
@@ -246,7 +246,7 @@ export const Projects: Project[] = [
         title: "LIÊN HỆ",
         content: [
           "Liên hệ ngay với đơn vị phát triển và phân phối chính thức – Công Ty TNHH Đầu Tư Và Dịch Vụ ĐẠI NGUYÊN HOLDING để nhận tư vấn chi tiết về dự án Đức Phát 3 – Dream City.",
-          "Hotline: 0908 999 904",
+          "Hotline: 0779 075 168",
           "Email: dainguyenholding@gmail.com",
           "Địa chỉ văn phòng: Số 09, đường Nguyễn Thị Nhung, KĐT Vạn Phúc, Phường Hiệp Bình, TP. HCM"
         ]
@@ -343,7 +343,7 @@ export const Projects: Project[] = [
         title: "LIÊN HỆ",
         content: [
           "Liên hệ với đơn vị phân phối chính thức – CÔNG TY TNHH ĐẦU TƯ VÀ DỊCH VỤ ĐẠI NGUYÊN HOLDING để được tư vấn chi tiết về dự án Thăng Long House.",
-          "Hotline: 0908 999 904",
+          "Hotline: 0779 075 168",
           "Email: dainguyenholding@gmail.com"
         ]
       }
@@ -429,7 +429,7 @@ export const Projects: Project[] = [
         title: "LIÊN HỆ",
         content: [
           "Liên hệ ngay với nhà phát triển, phân phối chính thức CÔNG TY TNHH ĐẦU TƯ VÀ DỊCH VỤ ĐẠI NGUYÊN HOLDING để được tư vấn về Khu đô thị Hoàng Nam Uyên Hưng.",
-          "Hotline: 0908 999 904",
+          "Hotline: 0779 075 168",
           "Email: dainguyenholding@gmail.com"
         ]
       }
@@ -520,7 +520,7 @@ export const Projects: Project[] = [
         title: "LIÊN HỆ",
         content: [
           "Liên hệ với đơn vị phát triển, phân phối chính thức CÔNG TY TNHH ĐẦU TƯ VÀ DỊCH VỤ ĐẠI NGUYÊN HOLDING để nhận tư vấn chi tiết về Phước Điền Citizen.",
-          "Hotline: 0908 999 904",
+          "Hotline: 0779 075 168",
           "Email: dainguyenholding@gmail.com"
         ]
       }
@@ -610,7 +610,7 @@ export const Projects: Project[] = [
         title: "LIÊN HỆ",
         content: [
           "Liên hệ với nhà phát triển, phân phối chính thức CÔNG TY TNHH ĐẦU TƯ VÀ DỊCH VỤ ĐẠI NGUYÊN HOLDING để nhận tư vấn chi tiết về An Residence - Thuận Area.",
-          "Hotline: 0908 999 904",
+          "Hotline: 0779 075 168",
           "Email: dainguyenholding@gmail.com"
         ]
       }

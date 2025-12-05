@@ -31,7 +31,7 @@ export default function Contact() {
                       style={{ maxWidth: 52 }}
                     />
                     <h6>
-                      0933 999 888
+                      0779 075 168
                       <br />
                       <span>Hotline tư vấn</span>
                     </h6>
@@ -128,7 +128,7 @@ export default function Contact() {
                   frameBorder={0}
                   style={{
                     border: 0,
-                    borderRadius: 10,
+                    borderRadius: 25,
                     boxShadow: "0px 0px 15px rgba(0, 0, 0, 0.15)"
                   }}
                   allowFullScreen

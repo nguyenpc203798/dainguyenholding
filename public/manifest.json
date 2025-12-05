@@ -4,8 +4,8 @@
   "description": "Công ty TNHH Đầu tư và Dịch vụ ĐẠI NGUYÊN HOLDING là đơn vị tiên phong trong lĩnh vực đầu tư bất động sản tại Việt Nam, mang đến giải pháp toàn diện từ phát triển dự án, quản lý vận hành đến tư vấn tài chính.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#191B24",
-  "theme_color": "#FFD875",
+  "background_color": "#fff",
+  "theme_color": "#d4a64f",
   "lang": "vi-VN",
   "icons": [
     {
@@ -14,7 +14,7 @@
       "type": "image/x-icon"
     },
     {
-      "src": "/images/logo/logo.svg",
+      "src": "/images/logo/logo.png",
       "sizes": "any",
       "type": "image/svg+xml"
     }
