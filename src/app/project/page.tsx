@@ -1,6 +1,7 @@
 "use client";
 import MainLayout from "@/components/layout/MainLayout";
 import HeroSection from "@/components/features/HeroSection";
+import { motion } from "framer-motion";
 import { Projects } from "@/data/project";
 import "./projects.css";
 
@@ -11,14 +12,25 @@ export default function Project() {
 
       {/* Projects Section */}
       <div className="projects-section">
-        
+
         <div className="container">
           {/* Projects Grid */}
           <div className="row">
             <div className="col-lg-12">
               <div className="projects-grid">
-                {Projects.map((project) => (
-                  <div key={project.id} className="glass-card project-card">
+                {Projects.map((project, index) => (
+                  <motion.div
+                    key={project.id}
+                    initial={{ opacity: 0, y: 120 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{
+                      duration: 0.6,
+                      ease: "easeOut",
+                      delay: index * 0.1,
+                    }}
+                    viewport={{ once: false, amount: 0.3 }}
+                    className="glass-card project-card"
+                  >
                     {/* Project Image */}
                     <div className="project-image">
                       <img src={project.thumbnail} alt={project.title} />
@@ -33,7 +45,7 @@ export default function Project() {
                     {/* Project Content */}
                     <div className="project-content">
                       <h3 className="project-title">{project.title}</h3>
-                      
+
                       <div className="project-meta">
                         <div className="meta-item">
                           <i className="fa fa-map-marker"></i>
@@ -61,14 +73,21 @@ export default function Project() {
                         <i className="fa fa-chevron-right"></i>
                       </a>
                     </div>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
             </div>
           </div>
 
           {/* CTA Section */}
-          <div className="row" style={{ marginTop: "80px" }}>
+          <motion.div
+            initial={{ opacity: 0, y: 120 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            viewport={{ once: false, amount: 0.3 }}
+            className="row"
+            style={{ marginTop: "80px" }}
+          >
             <div className="col-lg-12">
               <div className="glass-card cta-box">
                 <h2>Bạn quan tâm đến các dự án của chúng tôi?</h2>
@@ -83,7 +102,7 @@ export default function Project() {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </MainLayout>

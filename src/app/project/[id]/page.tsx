@@ -94,12 +94,12 @@ const ProjectDetailPage = () => {
                   </div>
 
                   <div className="project-cta-buttons">
-                    <button className="btn-primary">
+                    <a href="tel:0779075168" className="btn-primary">
                       <i className="fa fa-phone"></i> Gọi tư vấn
-                    </button>
-                    <button className="btn-secondary">
+                    </a>
+                    <a href="/contact" className="btn-secondary">
                       <i className="fa fa-envelope"></i> Yêu cầu thông tin
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -239,12 +239,12 @@ const ProjectDetailPage = () => {
               <h2>Bạn quan tâm dự án này?</h2>
               <p>Hãy liên hệ với chúng tôi để nhận được tư vấn chi tiết và hỗ trợ tốt nhất</p>
               <div className="cta-buttons">
-                <button className="btn-primary">
+                <a href="/contact" className="btn-primary">
                   <i className="fa fa-envelope-o"></i> Liên hệ ngay
-                </button>
-                <button className="btn-secondary">
+                </a>
+                <a href="tel:0779075168" className="btn-secondary">
                   <i className="fa fa-phone"></i> Gọi tư vấn miễn phí
-                </button>
+                </a>
               </div>
             </div>
           </div>

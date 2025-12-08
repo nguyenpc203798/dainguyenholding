@@ -286,9 +286,9 @@
 }
 
 .btn-secondary {
-  background: linear-gradient(135deg, #4CAF50, #3d8b40);
-  color: #fff;
-  box-shadow: 0 4px 15px rgba(76, 175, 80, 0.2);
+  background: rgba(212, 166, 79, 0.1);
+  color: #d4a64f;
+  border: 2px solid #d4a64f;
 }
 
 .btn-secondary:hover {

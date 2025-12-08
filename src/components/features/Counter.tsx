@@ -1,15 +1,17 @@
 "use client";
 
+import { motion } from "framer-motion";
 import { useRef, useEffect, useState, ReactNode } from "react";
 import CountUp from "react-countup";
 
 interface CounterProps {
   end: number;
   duration?: number;
+  delay?: number;
   text: ReactNode;
 }
 
-const Counter = ({ end, duration = 2, text }: CounterProps) => {
+const Counter = ({ end, duration = 2, delay = 0.2, text }: CounterProps) => {
   const [startAnimation, setStartAnimation] = useState(false);
   const counterRef = useRef<HTMLDivElement>(null);
 
@@ -39,7 +41,14 @@ const Counter = ({ end, duration = 2, text }: CounterProps) => {
   }, [startAnimation]);
 
   return (
-    <div className="counter" ref={counterRef}>
+    <motion.div
+      initial={{ opacity: 0, y: 180 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, ease: "easeOut", delay }}
+      viewport={{ once: false, amount: 0.3 }}
+      className="counter"
+      ref={counterRef}
+    >
       <h2 className="timer count-title count-number">
         {startAnimation ? (
           <CountUp end={end} duration={duration} separator="," />
@@ -48,7 +57,7 @@ const Counter = ({ end, duration = 2, text }: CounterProps) => {
         )}
       </h2>
       <p className="count-text">{text}</p>
-    </div>
+    </motion.div>
   );
 };
 

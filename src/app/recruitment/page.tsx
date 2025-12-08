@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 import MainLayout from '@/components/layout/MainLayout';
 import HeroSection from '@/components/features/HeroSection';
 import { Jobs } from '@/data/recruitment';
@@ -29,8 +30,18 @@ export default function Recruitment() {
 
           {/* Job List */}
           <div className="job-listings">
-            {Jobs.map((job) => (
-              <div key={job.id} className="job-card">
+            {Jobs.map((job, index) => (
+              <motion.div
+                key={job.id}
+                initial={{ opacity: 0, y: 80 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{
+                  duration: 0.6,
+                  ease: "easeOut",
+                  delay: index * 0.1,
+                }}
+                className="job-card"
+              >
                 {/* Job Header */}
                 <div className="job-header">
                   <div className="job-title-section">
@@ -178,7 +189,7 @@ export default function Recruitment() {
                     </div>
                   </div>
                 )}
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
@@ -187,10 +198,16 @@ export default function Recruitment() {
       {/* Why Join Section */}
       <section className="why-join-section">
         <div className="container">
-          <div className="section-header">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            viewport={{ once: false, amount: 0.3 }}
+            className="section-header"
+          >
             <h2>Tại Sao Chọn Đại Nguyên Holding</h2>
             <p>Khám phá cơ hội phát triển sự nghiệp và những quyền lợi tuyệt vời</p>
-          </div>
+          </motion.div>
 
           <div className="benefits-grid">
             {[
@@ -225,13 +242,24 @@ export default function Recruitment() {
                 description: 'Các hoạt động team building, sự kiện gặp mặt thường xuyên'
               }
             ].map((benefit, idx) => (
-              <div key={idx} className="benefit-card">
+              <motion.div
+                key={idx}
+                initial={{ opacity: 0, y: 80 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{
+                  duration: 0.6,
+                  ease: "easeOut",
+                  delay: idx * 0.1,
+                }}
+                viewport={{ once: false, amount: 0.3 }}
+                className="benefit-card"
+              >
                 <div className="benefit-icon">
                   <i className={`fa ${benefit.icon}`}></i>
                 </div>
                 <h4>{benefit.title}</h4>
                 <p>{benefit.description}</p>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>

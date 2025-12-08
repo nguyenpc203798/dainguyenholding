@@ -5,6 +5,7 @@ import Slider from "@components/features/homes/Slider";
 import Counter from "@components/features/Counter";
 import TabContents from "@components/features/TabContents";
 import NewsSection from "@components/features/homes/NewsSection";
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
@@ -13,7 +14,13 @@ export default function Home() {
       <div className="featured section">
         <div className="container">
           <div className="row">
-            <div className="col-lg-4">
+            <motion.div
+              initial={{ opacity: 0, y: 80 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+              viewport={{ once: false, amount: 0.3 }}
+              className="col-lg-4"
+            >
               <div className="left-image">
                 <img
                   className="top"
@@ -28,9 +35,15 @@ export default function Home() {
                   />
                 </a>
               </div>
-            </div>
+            </motion.div>
             <FeaturedTab />
-            <div className="col-lg-3">
+            <motion.div
+              initial={{ opacity: 0, y: 80 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+              viewport={{ once: false, amount: 0.3 }}
+              className="col-lg-3"
+            >
               <div className="info-table">
                 <ul>
                   <li>
@@ -83,7 +96,7 @@ export default function Home() {
                   </li>
                 </ul>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
@@ -129,6 +142,7 @@ export default function Home() {
                     <Counter
                       end={15}
                       duration={2}
+                      delay={0}
                       text={
                         <>
                           Héc ta
@@ -142,6 +156,7 @@ export default function Home() {
                     <Counter
                       end={2}
                       duration={2}
+                      delay={0.2}
                       text={
                         <>
                           Tỉ
@@ -155,6 +170,7 @@ export default function Home() {
                     <Counter
                       end={3}
                       duration={2}
+                      delay={0.4}
                       text={
                         <>
                           Giai đoạn
@@ -192,7 +208,9 @@ export default function Home() {
             <div className="col-lg-4 offset-lg-4">
               <div className="section-heading text-center">
                 <h6>| Liên hệ</h6>
-                <h2>Kết nối với <br /> Đại Nguyên Holding</h2>
+                <h2>
+                  Kết nối với <br /> Đại Nguyên Holding
+                </h2>
               </div>
             </div>
           </div>
@@ -203,7 +221,6 @@ export default function Home() {
           <div className="row">
             <div className="col-lg-7">
               <div id="map">
-
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4689.055793588901!2d106.71256211129604!3d10.841771457939002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175287a668248a9%3A0xd83115a810be7d02!2zMDkgTmd1eeG7hW4gVGjhu4sgTmh1bmcsIEhp4buHcCBCw6xuaCBQaMaw4bubYywgVGjhu6cgxJDhu6ljLCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmggNzAwMDAsIFZp4buHdCBOYW0!5e1!3m2!1svi!2s!4v1764544380159!5m2!1svi!2s"
                   width="100%"

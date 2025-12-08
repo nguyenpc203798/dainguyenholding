@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from "framer-motion";
 import React, { useState } from "react";
 
 const FeaturedTab = () => {
@@ -17,7 +18,7 @@ const FeaturedTab = () => {
         <h6>| Dự án nổi bật</h6>
         <h2>Thăng Long House</h2>
       </div>
-      <div className="accordion" id="accordionExample">
+      <motion.div initial={{ opacity: 0, y: 180 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease: "easeOut" }} viewport={{ once: false, amount: 0.3 }} className="accordion" id="accordionExample">
         <div className="accordion-item">
           <h2 className="accordion-header" id="headingOne">
             <button
@@ -88,7 +89,7 @@ const FeaturedTab = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from "framer-motion";
 import React, { useState } from "react";
 
 type TabType = "datnen" | "nhapho" | "chungcu";
@@ -40,7 +41,13 @@ const TabContents = () => {
           >
             <div className="row">
               <div className="col-lg-3">
-                <div className="info-table">
+                <motion.div
+                  initial={{ opacity: 0, y: 80 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, ease: "easeOut", delay: 0 }}
+                  viewport={{ once: false, amount: 0.3 }}
+                  className="info-table"
+                >
                   <ul>
                     <li>
                       Diện tích <span>100 - 200 m2</span>
@@ -58,15 +65,27 @@ const TabContents = () => {
                       Thanh toán <span>Linh hoạt</span>
                     </li>
                   </ul>
-                </div>
+                </motion.div>
               </div>
-              <div className="col-lg-6">
+              <motion.div
+                initial={{ opacity: 0, y: 180 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+                viewport={{ once: false, amount: 0.3 }}
+                className="col-lg-6"
+              >
                 <img
                   src="https://bdstngroup.vn/upload/filemanager/files/ha-tang-dat-nen-duc-phat-3.jpg"
                   alt="Đất nền"
                 />
-              </div>
-              <div className="col-lg-3">
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: 80 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
+                viewport={{ once: false, amount: 0.3 }}
+                className="col-lg-3"
+              >
                 <h4>Thông tin chi tiết đất nền</h4>
                 <p>
                   Đất nền là loại hình bất động sản phổ biến, phù hợp cho cả đầu
@@ -83,7 +102,7 @@ const TabContents = () => {
                     <i className="fa fa-calendar" /> Đặt lịch tham quan
                   </a>
                 </div>
-              </div>
+              </motion.div>
             </div>
           </div>
           <div
@@ -92,7 +111,13 @@ const TabContents = () => {
           >
             <div className="row">
               <div className="col-lg-3">
-                <div className="info-table">
+                <motion.div
+                  initial={{ opacity: 0, y: 80 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, ease: "easeOut", delay: 0 }}
+                  viewport={{ once: false, amount: 0.3 }}
+                  className="info-table"
+                >
                   <ul>
                     <li>
                       Diện tích <span>150 - 250 m2</span>
@@ -110,15 +135,27 @@ const TabContents = () => {
                       Thanh toán <span>Ngân hàng</span>
                     </li>
                   </ul>
-                </div>
+                </motion.div>
               </div>
-              <div className="col-lg-6">
+              <motion.div
+                initial={{ opacity: 0, y: 180 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+                viewport={{ once: false, amount: 0.3 }}
+                className="col-lg-6"
+              >
                 <img
                   src="https://i.pinimg.com/736x/db/c4/a3/dbc4a390da22b15831f266c12a762298.jpg"
                   alt="Nhà phố"
                 />
-              </div>
-              <div className="col-lg-3">
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: 80 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
+                viewport={{ once: false, amount: 0.3 }}
+                className="col-lg-3"
+              >
                 <h4>Thông tin chi tiết nhà phố</h4>
                 <p>
                   Nhà phố là loại hình bất động sản được nhiều gia đình ưa
@@ -135,7 +172,7 @@ const TabContents = () => {
                     <i className="fa fa-calendar" /> Đặt lịch tham quan
                   </a>
                 </div>
-              </div>
+              </motion.div>
             </div>
           </div>
           <div
@@ -144,7 +181,13 @@ const TabContents = () => {
           >
             <div className="row">
               <div className="col-lg-3">
-                <div className="info-table">
+                <motion.div
+                  initial={{ opacity: 0, y: 80 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, ease: "easeOut", delay: 0 }}
+                  viewport={{ once: false, amount: 0.3 }}
+                  className="info-table"
+                >
                   <ul>
                     <li>
                       Diện tích <span>60 - 120 m2</span>
@@ -162,12 +205,27 @@ const TabContents = () => {
                       Thanh toán <span>Trả góp</span>
                     </li>
                   </ul>
-                </div>
+                </motion.div>
               </div>
-              <div className="col-lg-6">
-                <img src="https://i.pinimg.com/736x/93/92/5d/93925dcf730a3e72786891952a457dc6.jpg" alt="Chung cư" />
-              </div>
-              <div className="col-lg-3">
+              <motion.div
+                initial={{ opacity: 0, y: 180 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+                viewport={{ once: false, amount: 0.3 }}
+                className="col-lg-6"
+              >
+                <img
+                  src="https://i.pinimg.com/736x/93/92/5d/93925dcf730a3e72786891952a457dc6.jpg"
+                  alt="Chung cư"
+                />
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: 80 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
+                viewport={{ once: false, amount: 0.3 }}
+                className="col-lg-3"
+              >
                 <h4>Thông tin chi tiết chung cư</h4>
                 <p>
                   Chung cư là giải pháp nhà ở hiện đại, phù hợp cho các gia đình
@@ -184,7 +242,7 @@ const TabContents = () => {
                     <i className="fa fa-calendar" /> Đặt lịch tham quan
                   </a>
                 </div>
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>

@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 import MainLayout from "@/components/layout/MainLayout";
 import HeroSection from "@/components/features/HeroSection";
 import "./style.css";
@@ -29,7 +30,13 @@ export default function News() {
         <div className="container">
 
           {/* Categories Filter */}
-          <div className="row news-categories-wrapper">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            viewport={{ once: false, amount: 0.3 }}
+            className="row news-categories-wrapper"
+          >
             <div className="col-lg-12 text-center">
               <ul className="properties-filter news-categories">
                 {categories.map((category) => (
@@ -45,13 +52,24 @@ export default function News() {
                 ))}
               </ul>
             </div>
-          </div>
+          </motion.div>
 
           {/* News Grid */}
           <div className="row news-grid">
             {filteredNews.length > 0 ? (
-              filteredNews.map((news) => (
-                <div key={news.id} className="news-item-wrapper">
+              filteredNews.map((news, index) => (
+                <motion.div
+                  key={news.id}
+                  initial={{ opacity: 0, y: 80 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{
+                    duration: 0.6,
+                    ease: "easeOut",
+                    delay: index * 0.1,
+                  }}
+                  viewport={{ once: false, amount: 0.3 }}
+                  className="news-item-wrapper"
+                >
                   <div className="news-item">
                     {/* News Image */}
                     <div className="news-item-image-container">
@@ -84,14 +102,20 @@ export default function News() {
                       </a>
                     </div>
                   </div>
-                </div>
+                </motion.div>
               ))
             ) : (
-              <div className="col-lg-12 text-center news-empty-state">
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, ease: "easeOut" }}
+                viewport={{ once: false, amount: 0.3 }}
+                className="col-lg-12 text-center news-empty-state"
+              >
                 <p className="news-empty-message">
                   Không có tin tức nào trong danh mục này.
                 </p>
-              </div>
+              </motion.div>
             )}
           </div>
         </div>

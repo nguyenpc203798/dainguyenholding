@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import React from "react";
 
 interface NewsItem {
@@ -122,34 +125,51 @@ const NewsSection = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-4 offset-lg-4">
-            <div className="section-heading text-center">
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+              viewport={{ once: false, amount: 0.3 }}
+              className="section-heading text-center"
+            >
               <h6>| Tin tức</h6>
               <h2>Tin Tức Bất Động Sản Mới Nhất</h2>
-            </div>
+            </motion.div>
           </div>
         </div>
         <div className="row">
-          {newsList.map((news) => (
-            <div key={news.id} className="col-lg-4 col-md-6">
+          {newsList.map((news, index) => (
+            <motion.div
+              key={news.id}
+              initial={{ opacity: 0, y: 80 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 0.6,
+                ease: "easeOut",
+                delay: index * 0.1,
+              }}
+              viewport={{ once: false, amount: 0.3 }}
+              className="col-lg-4 col-md-6"
+            >
               <div className="item">
                 <div>
-                    <a href={news.url} target="_blank" rel="noopener noreferrer">
+                  <a href={news.url} target="_blank" rel="noopener noreferrer">
                     <img src={news.image} alt={news.alt} />
-                    </a>
-                    <span className="category">{news.category}</span>
-                    <h6>{news.price}</h6>
-                    <h4>
+                  </a>
+                  <span className="category">{news.category}</span>
+                  <h6>{news.price}</h6>
+                  <h4>
                     <a href={news.url} target="_blank" rel="noopener noreferrer">
-                        {news.title}
+                      {news.title}
                     </a>
-                    </h4>
-                    <ul>
+                  </h4>
+                  <ul>
                     {news.details.map((detail, index) => (
-                        <li key={index}>
+                      <li key={index}>
                         {detail.label}: <span>{detail.value}</span>
-                        </li>
+                      </li>
                     ))}
-                    </ul>
+                  </ul>
                 </div>
                 <div className="main-button">
                   <a href={news.url} target="_blank" rel="noopener noreferrer">
@@ -157,7 +177,7 @@ const NewsSection = () => {
                   </a>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
@@ -165,4 +185,4 @@ const NewsSection = () => {
   );
 };
 
-export default NewsSection
+export default NewsSection;
