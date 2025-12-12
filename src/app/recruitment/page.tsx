@@ -15,10 +15,30 @@ export default function Recruitment() {
   };
 
   const calculateDaysLeft = (deadline: string) => {
-    const today = new Date();
-    const deadlineDate = new Date(deadline);
-    const daysLeft = Math.ceil((deadlineDate.getTime() - today.getTime()) / (1000 * 60 * 60 * 24));
-    return daysLeft;
+    try {
+      // Parse định dạng DD/MM/YYYY
+      const [day, month, year] = deadline.split('/').map(Number);
+
+      // Tạo Date object (month trong Date là 0-indexed, nên trừ 1)
+      const deadlineDate = new Date(year, month - 1, day);
+
+      // Set thời gian về cuối ngày (23:59:59)
+      deadlineDate.setHours(23, 59, 59, 999);
+
+      // Lấy ngày hiện tại và set về đầu ngày (00:00:00)
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
+
+      // Tính số ngày còn lại
+      const timeDiff = deadlineDate.getTime() - today.getTime();
+      const daysLeft = Math.ceil(timeDiff / (1000 * 60 * 60 * 24));
+
+      // Trả về 0 nếu đã quá hạn
+      return daysLeft < 0 ? 0 : daysLeft;
+    } catch (error) {
+      console.error('Error calculating days left:', error);
+      return 0;
+    }
   };
 
   return (

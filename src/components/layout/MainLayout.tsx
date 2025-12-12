@@ -1,5 +1,6 @@
 import Footer from "./Footer";
 import Header from "./Header";
+import "./Footer.css";
 
 interface MainLayoutProps {
   children: React.ReactNode;

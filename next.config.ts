@@ -18,6 +18,16 @@ const nextConfig: NextConfig = {
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
+  // Cấu hình để xử lý CSS của Bootstrap
+  // webpack: (config, { isServer }) => {
+  //   if (!isServer) {
+  //     config.resolve.fallback = {
+  //       ...config.resolve.fallback,
+  //       fs: false,
+  //     };
+  //   }
+  //   return config;
+  // },
   // cấu hình Turbopack
   turbopack: {
     rules: {

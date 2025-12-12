@@ -235,7 +235,7 @@ export default function Home() {
                 />
               </div>
               <div className="row">
-                <div className="col-lg-5">
+                <div className="col-xxl-5">
                   <div className="item phone">
                     <img
                       src="/images/icons/phone-icon.png"
@@ -249,7 +249,7 @@ export default function Home() {
                     </h6>
                   </div>
                 </div>
-                <div className="col-lg-7">
+                <div className="col-xxl-7">
                   <div className="item email">
                     <img
                       src="/images/icons/email-icon.png"

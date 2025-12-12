@@ -40,7 +40,7 @@ export type Job = {
 export const Jobs: Job[] = [
   {
     id: 1,
-    title: "Nhân Viên Văn Phòng (Ưu Tiên Sinh Viên Mới Ra Trường)",
+    title: "Chuyên viên tư vấn",
     salary: "8.5 - 45 triệu",
     location: "Hồ Chí Minh, Bình Dương",
     locations: [
@@ -54,7 +54,8 @@ export const Jobs: Job[] = [
       }
     ],
     experience: "Không yêu cầu",
-    isNew: true,
+    isNew: false,
+    deadline: "24/01/2026",
     applicants: 245,
     ageRange: "22 - 35 tuổi",
     education: "Cao Đẳng trở lên",
@@ -104,7 +105,101 @@ export const Jobs: Job[] = [
   },
   {
     id: 2,
-    title: "Chuyên Viên Kế Toán Nội Bộ (Nhận Việc Ngay)",
+    title: "Trưởng Phòng Kinh Doanh (TPKD)",
+    salary: "15 - 50 triệu",
+    location: "Hồ Chí Minh, Bình Dương",
+    locations: [
+      {
+        city: "Hồ Chí Minh",
+        address: "Số 09 Nguyễn Thị Nhung, Khu đô thị Vạn Phúc, Phường Hiệp Bình Phước, Thủ Đức"
+      },
+      {
+        city: "Bình Dương",
+        address: "Dĩ An"
+      }
+    ],
+    experience: "Từ 2 năm ở vị trí TPKD",
+    isNew: true,
+    deadline: "30/01/2026",
+    ageRange: "25 - 40 tuổi",
+    education: "Cao đẳng trở lên",
+    workingHours: "Thứ 2 - Thứ 7 (08:00 - 17:00)",
+    gender: "Không yêu cầu",
+  
+    requirements: [
+      {
+        title: "Yêu cầu ứng viên",
+        items: [
+          "Trình độ tối thiểu: Cao đẳng trở lên",
+          "Kinh nghiệm tối thiểu 2 năm trở lên tại vị trí Trưởng phòng Kinh doanh (ưu tiên ngành BĐS)",
+          "Kinh nghiệm thị trường nhà phố/đất nền Bình Dương là lợi thế",
+          "Kỹ năng giao tiếp, thuyết phục và chốt khách tốt",
+          "Kỹ năng giải quyết vấn đề và ra quyết định",
+          "Kỹ năng tuyển dụng, quản lý, đào tạo và thúc đẩy đội ngũ nhân sự",
+          "Khả năng phân công, giám sát và quản trị đội nhóm",
+          "Chịu được áp lực công việc cao"
+        ]
+      },
+      {
+        title: "Yêu cầu khác",
+        items: [
+          "Năng động, sáng tạo, nhiệt huyết trong công việc",
+          "Có tư duy chiến lược, định hướng kinh doanh",
+          "Tinh thần cầu tiến, gắn bó lâu dài cùng Công ty",
+          "Đam mê Bất động sản, thích kinh doanh và khát vọng thu nhập cao"
+        ]
+      }
+    ],
+  
+    benefits: [
+      {
+        title: "Quyền lợi ứng viên",
+        items: [
+          "Lương cơ bản: 15 - 25 triệu/tháng, tăng lũy tiến theo hiệu quả công việc",
+          "Hoa hồng TPKD: Lên đến 30 triệu/sản phẩm",
+          "Hoa hồng Sale (team): 40 - 70 triệu/sản phẩm",
+          "Thưởng nóng cá nhân và đội nhóm bằng hiện kim/hiện vật",
+          "Hỗ trợ chi phí bán hàng và marketing 20 - 30 triệu/tháng",
+          "Ưu tiên ứng viên có đội nhóm sẵn từ 2 - 5 nhân viên",
+          "Cơ hội thăng tiến lên vị trí Giám đốc Kinh doanh sau 6 tháng (nếu đạt KPI)",
+          "Thưởng hiệu suất, lương tháng 13, thưởng Lễ – Tết, du lịch hằng năm",
+          "Tham gia các khóa đào tạo chuyên sâu từ các chuyên gia Bất động sản – Tài chính",
+          "Môi trường trẻ trung, năng động, chuyên nghiệp và nhiều cơ hội phát triển",
+          "Lộ trình thăng tiến rõ ràng, chế độ BHXH đầy đủ",
+          "Team building hàng quý trong và ngoài nước"
+        ]
+      }
+    ],
+  
+    specialties: ["Bất động sản", "Quản lý đội nhóm", "Kinh doanh", "Chiến lược thị trường"],
+  
+    jobDescription: [
+      "Xây dựng kế hoạch, chiến lược và mục tiêu kinh doanh cho phòng Kinh doanh",
+      "Khai thác thêm các nguồn khách hàng có nhu cầu sản phẩm Bất động sản của Công ty",
+      "Giám sát, hỗ trợ và đánh giá hiệu quả hoạt động của đội ngũ kinh doanh",
+      "Báo cáo doanh thu, hiệu quả bán hàng hàng tuần/tháng cho Ban Giám đốc",
+      "Xây dựng và duy trì mối quan hệ khách hàng bền vững nhằm gia tăng doanh thu",
+      "Hỗ trợ nhân viên trong quá trình tư vấn và chốt hợp đồng với khách hàng",
+      "Quan sát, đánh giá thị trường & đối thủ để đề xuất chiến lược cạnh tranh",
+      "Liên hệ tiếp cận khách hàng mới, cập nhật tình hình thị trường & sản phẩm mới",
+      "Phối hợp với bộ phận Marketing trong hoạt động triển khai chiến dịch bán hàng",
+      "Các nhiệm vụ khác theo yêu cầu của Ban Giám đốc",
+      "Sản phẩm Công ty: Nhà phố, đất nền các tỉnh (Bình Dương, Bình Phước, Đồng Nai…), đa dạng diện tích, giá tốt và pháp lý rõ ràng"
+    ],
+  
+    subsidies: ["Hỗ trợ marketing", "Chi phí bán hàng", "Công cụ làm việc"],
+    
+    generalBenefits: [
+      "Lương tháng 13",
+      "Du lịch hằng năm",
+      "Team building",
+      "Thưởng doanh số",
+      "Khám sức khỏe định kỳ"
+    ]
+  },
+  {
+    id: 3,
+    title: "Kế Toán Nội Bộ (Ưu Tiên Nhận Việc Ngay)",
     salary: "9 - 12 triệu",
     location: "Hồ Chí Minh",
     locations: [
@@ -115,47 +210,53 @@ export const Jobs: Job[] = [
     ],
     experience: "1 năm",
     isNew: true,
-    deadline: "24/12/2025",
+    deadline: "30/01/2026",
     ageRange: "25 - 32 tuổi",
     education: "Cao Đẳng trở lên",
     gender: "Nữ",
-    workingHours: "Thứ 2 - Thứ 7 (từ 08:00 đến 17:30, nghỉ trưa 1 tiếng rưỡi)",
+    workingHours: "Thứ 2 - Thứ 7 (08:00 - 17:30, nghỉ trưa 1 tiếng rưỡi)",
     requirements: [
       {
         title: "Yêu cầu ứng viên",
         items: [
-          "Nữ, Độ tuổi từ 25-32 tuổi",
-          "Tốt nghiệp từ Cao đẳng chuyên ngành Kế toán, Tài chính, Kiểm toán",
-          "Có từ 1 năm kinh nghiệm ở vị trí kế toán nội bộ, tổng hợp",
-          "Sử dụng thành thạo tin học văn phòng: Excel, Word",
-          "CẨN THẬN, TRUNG THỰC, tự tin và có tinh thần trách nhiệm",
-          "Có khả năng làm việc độc lập"
+          "Nữ, độ tuổi từ 25 - 32",
+          "Tốt nghiệp Cao đẳng trở lên chuyên ngành Kế toán, Tài chính, Kiểm toán",
+          "Tối thiểu 01 năm kinh nghiệm tại vị trí Kế toán nội bộ hoặc kế toán tổng hợp",
+          "Thành thạo Excel, Word và ưu tiên biết sử dụng phần mềm kế toán (Misa, Fast, Bravo)",
+          "Cẩn thận, trung thực, trách nhiệm cao trong công việc",
+          "Có khả năng tổng hợp số liệu, lập báo cáo tài chính nội bộ",
+          "Kỹ năng giao tiếp tốt, khả năng làm việc độc lập",
+          "Ưu tiên ứng viên có thể nhận việc ngay"
         ]
       }
     ],
     benefits: [
       {
-        title: "Quyền lợi",
+        title: "Quyền lợi ứng viên",
         items: [
-          "Mức lương: 9.000.000 – 12.000.000 (Thỏa thuận theo năng lực)",
-          "Thưởng theo doanh số Công ty: Từ 1 triệu đồng/Sản phẩm",
-          "Lương tháng 13, thưởng Lễ/Tết, du lịch công ty hằng năm",
-          "Được làm việc trong môi trường hiện đại, đầy đủ",
-          "Chính sách hỗ trợ nhân sự tốt",
-          "Cơ hội thăng tiến và phát triển nghề nghiệp"
+          "Mức lương: 9 - 12 triệu (thoả thuận theo năng lực)",
+          "Thưởng theo doanh số Công ty: Từ 1.000.000/sản phẩm",
+          "Thưởng Lễ, Tết, lương tháng 13",
+          "Môi trường làm việc chuyên nghiệp, hiện đại, đầy đủ trang thiết bị",
+          "Được đào tạo thêm nghiệp vụ nâng cao",
+          "Tham gia du lịch hằng năm, team building định kỳ",
+          "Chính sách phúc lợi đầy đủ: BHXH, BHYT, BHTN theo quy định"
         ]
       }
     ],
-    specialties: ["Kế toán nội bộ", "Kế toán"],
+    specialties: ["Kế toán nội bộ", "Tài chính", "Kế toán tổng hợp"],
     jobDescription: [
-      "Quản lý quỹ và thanh toán các chi phí nội bộ đảm bảo khâu vận hành",
-      "Theo dõi công nợ khách hàng, NCC, chi phí, doanh thu, tài sản cố định và dòng tiền",
-      "Thực hiện soạn thảo hợp đồng, phiếu thu và thu tiền khách hàng",
-      "Soạn thảo các văn bản pháp lý hỗ trợ xử lý khách hàng (khi cần)",
-      "Đề xuất, soạn thảo các chính sách lương, thưởng, phúc lợi cho CBNV",
-      "Lưu trữ hồ sơ khách hàng, dự án. Đảm bảo việc lưu trữ chứng từ, sổ sách kế toán",
-      "Tổng hợp báo cáo chi phí hàng tuần/tháng cho Ban Giám đốc",
-      "Tham mưu cho Ban Giám đốc các vấn đề liên quan đến tài chính, kế toán, dòng tiền"
-    ]
+      "Theo dõi thu chi nội bộ và lập phiếu thu/chi",
+      "Theo dõi công nợ khách hàng, nhà cung cấp, tài sản cố định",
+      "Thực hiện hạch toán nội bộ và đối chiếu số liệu với sổ sách",
+      "Lập các báo cáo doanh thu – chi phí – dòng tiền theo tuần/tháng",
+      "Soạn thảo hợp đồng, chứng từ kế toán",
+      "Quản lý, lưu trữ hồ sơ kế toán, chứng từ",
+      "Phối hợp với các phòng ban để đảm bảo luồng thông tin chính xác",
+      "Thực hiện các công việc theo yêu cầu của Kế toán trưởng/Ban giám đốc"
+    ],
+    subsidies: ["Phụ cấp cơm trưa", "Phụ cấp gửi xe", "Phụ cấp trách nhiệm"],
+    generalBenefits: ["Team building", "Du lịch", "Thưởng tháng 13", "Khám sức khỏe định kỳ"]
   }
+  
 ];
