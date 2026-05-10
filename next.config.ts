@@ -12,6 +12,14 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "masterisehomes.com",
       },
+      {
+        protocol: "https",
+        hostname: "premedia.vneconomy.vn",
+      },
+      {
+        protocol: "https",
+        hostname: "khudothibacsaigon.com",
+      },
     ],
     // Tăng timeout cho image optimization
     minimumCacheTTL: 60,

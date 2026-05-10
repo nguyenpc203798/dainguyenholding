@@ -258,5 +258,4 @@ export const Jobs: Job[] = [
     subsidies: ["Phụ cấp cơm trưa", "Phụ cấp gửi xe", "Phụ cấp trách nhiệm"],
     generalBenefits: ["Team building", "Du lịch", "Thưởng tháng 13", "Khám sức khỏe định kỳ"]
   }
-  
 ];

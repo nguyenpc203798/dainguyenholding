@@ -24,7 +24,7 @@ export default function Home() {
               <div className="left-image">
                 <img
                   className="top"
-                  src="https://datxanh.homes/wp-content/uploads/2024/12/view-nhin-khu-cong-vien-du-an-thang-long-house-tan-uyen-binh-duong.jpg"
+                  src="https://khudothibacsaigon.com/wp-content/uploads/2026/04/8caa56fc5f9bdec5878a.jpg"
                   alt=""
                 />
                 <a href="property-details.html">
@@ -53,7 +53,7 @@ export default function Home() {
                       style={{ maxWidth: 52 }}
                     />
                     <h4>
-                      3.03 ha
+                      49.1 ha
                       <br />
                       <span>Tổng diện tích</span>
                     </h4>
@@ -106,7 +106,7 @@ export default function Home() {
             <div className="col-lg-4 offset-lg-4">
               <div className="section-heading text-center">
                 <h6>| Video Dự Án</h6>
-                <h2>HOÀNG NAM - UYÊN HƯNG</h2>
+                <h2>KHU ĐÔ THỊ BẮC SÀI GÒN</h2>
               </div>
             </div>
           </div>
@@ -118,11 +118,11 @@ export default function Home() {
             <div className="col-lg-10 offset-lg-1">
               <div className="video-frame">
                 <img
-                  src="https://bdstngroup.vn/upload/filemanager/files/building-daytime-copy-1.jpg"
+                  src="https://premedia.vneconomy.vn/files/uploads/2026/05/05/82ac7fe529684437b2023dea263f5c14-87386.jpg?w=1200"
                   alt=""
                 />
                 <a
-                  href="https://www.youtube.com/watch?v=ucmM9vnhBAU"
+                  href="https://www.youtube.com/watch?v=H1qGBEoHF58"
                   target="_blank"
                 >
                   <i className="fa fa-play" />
@@ -140,7 +140,7 @@ export default function Home() {
                 <div className="row">
                   <div className="col-lg-4">
                     <Counter
-                      end={15}
+                      end={49}
                       duration={2}
                       delay={0}
                       text={
@@ -154,14 +154,14 @@ export default function Home() {
                   </div>
                   <div className="col-lg-4">
                     <Counter
-                      end={2}
+                      end={1}
                       duration={2}
                       delay={0.2}
                       text={
                         <>
                           Tỉ
                           <br />
-                          Giá nhà phố
+                          Giá mỗi nền
                         </>
                       }
                     />

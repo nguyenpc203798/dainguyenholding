@@ -16,9 +16,16 @@ const FeaturedTab = () => {
     <div className="col-lg-5">
       <div className="section-heading">
         <h6>| Dự án nổi bật</h6>
-        <h2>Thăng Long House</h2>
+        <h2>Khu đô thị bắc Sài Gòn</h2>
       </div>
-      <motion.div initial={{ opacity: 0, y: 180 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease: "easeOut" }} viewport={{ once: false, amount: 0.3 }} className="accordion" id="accordionExample">
+      <motion.div
+        initial={{ opacity: 0, y: 180 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        viewport={{ once: false, amount: 0.3 }}
+        className="accordion"
+        id="accordionExample"
+      >
         <div className="accordion-item">
           <h2 className="accordion-header" id="headingOne">
             <button
@@ -34,10 +41,13 @@ const FeaturedTab = () => {
             className={`accordion-collapse collapse ${openAccordion === "collapseOne" ? "show" : ""}`}
           >
             <div className="accordion-body">
-              <strong>Thăng Long House</strong> tọa lạc tại{" "}
-              <strong>phường Hội Nghĩa</strong>, Tân Uyên, Bình Dương, kết nối
-              thuận tiện đến DT747A, Vành đai 4 và các khu công nghiệp lớn như{" "}
-              <strong>VSIP II, VSIP III, Nam Tân Uyên</strong>.
+              Tọa lạc ngay nút giao cao tốc <strong>TP.HCM – Chơn Thành</strong>{" "}
+              và mặt tiền <strong>ĐT741</strong>,{" "}
+              <strong>Khu đô thị Bắc Sài Gòn</strong> sở hữu lợi thế kết nối
+              vượt trội. Nằm giữa trung tâm các cụm khu công nghiệp lớn, dự án
+              không chỉ thuận tiện an cư mà còn mở ra cơ hội đầu tư đón đầu làn
+              sóng dịch chuyển công nghiệp, nơi dòng tiền và giá trị bất động
+              sản liên tục gia tăng.
             </div>
           </div>
         </div>
@@ -57,12 +67,13 @@ const FeaturedTab = () => {
           >
             <div className="accordion-body">
               Dự án sở hữu nhiều tiện ích như{" "}
-              <strong>
-                trường mầm non, công viên cây xanh, đường dạo ven suối, khu vui
-                chơi trẻ em
-              </strong>{" "}
+              <strong>Hồ bơi, công viên cây xanh, khu vui chơi trẻ em</strong>{" "}
               và các tiểu cảnh độc đáo, đồng thời gần{" "}
-              <strong>chợ, siêu thị</strong> và khu dân cư đông đúc.
+              <strong>
+                chợ đêm, siêu thị, trường học, bệnh viện, mini golf và đặc biệt
+                là đường đua Go-Kart
+              </strong>{" "}
+              và khu dân cư đông đúc.
             </div>
           </div>
         </div>
@@ -81,7 +92,7 @@ const FeaturedTab = () => {
             className={`accordion-collapse collapse ${openAccordion === "collapseThree" ? "show" : ""}`}
           >
             <div className="accordion-body">
-              <strong>Thăng Long House</strong> có pháp lý minh bạch với{" "}
+              <strong>Khu đô thị bắc Sài Gòn</strong> có pháp lý minh bạch với{" "}
               <strong>chủ trương đầu tư</strong> đầy đủ,{" "}
               <strong>quy hoạch chi tiết 1/500</strong> và{" "}
               <strong>sổ hồng riêng từng lô</strong>, đảm bảo an tâm khi sang

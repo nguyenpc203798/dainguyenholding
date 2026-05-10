@@ -1,22 +1,22 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import { useParams } from 'next/navigation';
-import MainLayout from '@/components/layout/MainLayout';
-import HeroSection from '@/components/features/HeroSection';
-import { Projects, ProjectOverview, ProjectSection } from '@/data/project';
-import './detail.css';
+import { useState } from "react";
+import { useParams } from "next/navigation";
+import MainLayout from "@/components/layout/MainLayout";
+import HeroSection from "@/components/features/HeroSection";
+import { Projects, ProjectOverview, ProjectSection } from "@/data/project";
+import "./detail.css";
 
 const ProjectDetailPage = () => {
   const params = useParams();
   const projectId = parseInt(params?.id as string);
-  const project = Projects.find(p => p.id === projectId);
-  const [activeSection, setActiveSection] = useState('introduction');
+  const project = Projects.find((p) => p.id === projectId);
+  const [activeSection, setActiveSection] = useState("introduction");
 
   if (!project) {
     return (
       <MainLayout>
-        <div style={{ padding: '100px 0', textAlign: 'center' }}>
+        <div style={{ padding: "100px 0", textAlign: "center" }}>
           <h1>Dự án không tìm thấy</h1>
         </div>
       </MainLayout>
@@ -24,26 +24,27 @@ const ProjectDetailPage = () => {
   }
 
   const sectionKeys = [
-    'introduction',
-    'overview',
-    'location',
-    'amenities',
-    'floorPlan',
-    'legal',
-    'contact'
+    "introduction",
+    "overview",
+    "location",
+    "amenities",
+    "floorPlan",
+    "legal",
+    "contact",
   ] as const;
 
   const sectionLabels = {
-    introduction: 'Giới thiệu',
-    overview: 'Tổng quan',
-    location: 'Vị trí',
-    amenities: 'Tiện ích',
-    floorPlan: 'Mặt bằng',
-    legal: 'Pháp lý',
-    contact: 'Liên hệ'
+    introduction: "Giới thiệu",
+    overview: "Tổng quan",
+    location: "Vị trí",
+    amenities: "Tiện ích",
+    floorPlan: "Mặt bằng",
+    legal: "Pháp lý",
+    contact: "Liên hệ",
   };
 
-  const currentSection = project.sections[activeSection as keyof typeof project.sections];
+  const currentSection =
+    project.sections[activeSection as keyof typeof project.sections];
 
   return (
     <MainLayout>
@@ -112,7 +113,7 @@ const ProjectDetailPage = () => {
               {sectionKeys.map((key) => (
                 <button
                   key={key}
-                  className={`section-nav-item ${activeSection === key ? 'active' : ''}`}
+                  className={`section-nav-item ${activeSection === key ? "active" : ""}`}
                   onClick={() => setActiveSection(key)}
                 >
                   {sectionLabels[key]}
@@ -126,83 +127,97 @@ const ProjectDetailPage = () => {
             <h2 className="section-title">{currentSection.title}</h2>
 
             {/* Overview Section Special Layout */}
-            {activeSection === 'overview' && currentSection.title === 'TỔNG QUAN DỰ ÁN' && (
-              <div className="overview-content">
-                <div className="overview-grid">
-                  <div className="overview-item">
-                    <label>Tên dự án</label>
-                    <p>{(currentSection as ProjectOverview).ten}</p>
-                  </div>
-                  <div className="overview-item">
-                    <label>Vị trí</label>
-                    <p>{(currentSection as ProjectOverview).vitri}</p>
-                  </div>
-                  <div className="overview-item">
-                    <label>Chủ đầu tư</label>
-                    <p>{(currentSection as ProjectOverview).chudautu}</p>
-                  </div>
-                  <div className="overview-item">
-                    <label>Đơn vị phát triển</label>
-                    <p>{(currentSection as ProjectOverview).donviphattrien}</p>
-                  </div>
-                  <div className="overview-item">
-                    <label>Tổng diện tích</label>
-                    <p>{(currentSection as ProjectOverview).tongdientich}</p>
-                  </div>
-                  <div className="overview-item">
-                    <label>Loại hình</label>
-                    <p>{(currentSection as ProjectOverview).loaihinh}</p>
-                  </div>
-                  <div className="overview-item">
-                    <label>Quy mô xây dựng</label>
-                    <p>{(currentSection as ProjectOverview).quymoxd}</p>
-                  </div>
-                  <div className="overview-item">
-                    <label>Diện tích nhà</label>
-                    <p>{(currentSection as ProjectOverview).dientichnha}</p>
-                  </div>
-                  <div className="overview-item">
-                    <label>Tiện ích</label>
-                    <p>{(currentSection as ProjectOverview).tienich}</p>
-                  </div>
-                  <div className="overview-item">
-                    <label>Cơ sở hạ tầng</label>
-                    <p>{(currentSection as ProjectOverview).csht}</p>
-                  </div>
-                  <div className="overview-item">
-                    <label>Pháp lý</label>
-                    <p>{(currentSection as ProjectOverview).phaply}</p>
-                  </div>
-                  <div className="overview-item">
-                    <label>Quy mô</label>
-                    <p>{(currentSection as ProjectOverview).quymo}</p>
-                  </div>
-                  <div className="overview-item">
-                    <label>Thời gian</label>
-                    <p>{(currentSection as ProjectOverview).thoigian}</p>
+            {activeSection === "overview" &&
+              currentSection.title === "TỔNG QUAN DỰ ÁN" && (
+                <div className="overview-content">
+                  <div className="overview-grid">
+                    <div className="overview-item">
+                      <label>Tên dự án</label>
+                      <p>{(currentSection as ProjectOverview).ten}</p>
+                    </div>
+                    <div className="overview-item">
+                      <label>Vị trí</label>
+                      <p>{(currentSection as ProjectOverview).vitri}</p>
+                    </div>
+                    <div className="overview-item">
+                      <label>Chủ đầu tư</label>
+                      <p>{(currentSection as ProjectOverview).chudautu}</p>
+                    </div>
+                    <div className="overview-item">
+                      <label>Đơn vị phát triển</label>
+                      <p>
+                        {(currentSection as ProjectOverview).donviphattrien}
+                      </p>
+                    </div>
+                    <div className="overview-item">
+                      <label>Tổng diện tích</label>
+                      <p>{(currentSection as ProjectOverview).tongdientich}</p>
+                    </div>
+                    <div className="overview-item">
+                      <label>Loại hình</label>
+                      <p>{(currentSection as ProjectOverview).loaihinh}</p>
+                    </div>
+                    <div className="overview-item">
+                      <label>Quy mô xây dựng</label>
+                      <p>{(currentSection as ProjectOverview).quymoxd}</p>
+                    </div>
+                    <div className="overview-item">
+                      <label>Diện tích nhà</label>
+                      <p>{(currentSection as ProjectOverview).dientichnha}</p>
+                    </div>
+                    <div className="overview-item">
+                      <label>Tiện ích</label>
+                      <p>{(currentSection as ProjectOverview).tienich}</p>
+                    </div>
+                    <div className="overview-item">
+                      <label>Cơ sở hạ tầng</label>
+                      <p>{(currentSection as ProjectOverview).csht}</p>
+                    </div>
+                    <div className="overview-item">
+                      <label>Pháp lý</label>
+                      <p>{(currentSection as ProjectOverview).phaply}</p>
+                    </div>
+                    <div className="overview-item">
+                      <label>Quy mô</label>
+                      <p>{(currentSection as ProjectOverview).quymo}</p>
+                    </div>
+                    <div className="overview-item">
+                      <label>Thời gian</label>
+                      <p>{(currentSection as ProjectOverview).thoigian}</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            )}
+              )}
 
             {/* Regular Content with Images */}
-            {activeSection !== 'overview' && (
+            {activeSection !== "overview" && (
               <>
                 <div className="content-text">
-                  {(currentSection as ProjectSection).content?.map((paragraph: string, index: number) => (
-                    <p key={index}>{paragraph}</p>
-                  ))}
+                  {(currentSection as ProjectSection).content?.map(
+                    (paragraph: string, index: number) => (
+                      <p key={index}>{paragraph}</p>
+                    ),
+                  )}
                 </div>
 
-                {(currentSection as ProjectSection).images && (currentSection as ProjectSection).images && (currentSection as ProjectSection).images!.length > 0 && (
-                  <div className={`image-grid image-grid-${Math.min((currentSection as ProjectSection).images!.length, 3)}`}>
-                    {(currentSection as ProjectSection).images!.map((image: string, index: number) => (
-                      <div key={index} className="image-item">
-                        <img src={image} alt={`${currentSection.title} - ${index + 1}`} />
-                      </div>
-                    ))}
-                  </div>
-                )}
+                {(currentSection as ProjectSection).images &&
+                  (currentSection as ProjectSection).images &&
+                  (currentSection as ProjectSection).images!.length > 0 && (
+                    <div
+                      className={`image-grid image-grid-${Math.min((currentSection as ProjectSection).images!.length, 3)}`}
+                    >
+                      {(currentSection as ProjectSection).images!.map(
+                        (image: string, index: number) => (
+                          <div key={index} className="image-item">
+                            <img
+                              src={image}
+                              alt={`${currentSection.title} - ${index + 1}`}
+                            />
+                          </div>
+                        ),
+                      )}
+                    </div>
+                  )}
               </>
             )}
           </div>
@@ -211,22 +226,36 @@ const ProjectDetailPage = () => {
           <div className="related-projects">
             <h2 className="related-title">Dự án liên quan</h2>
             <div className="related-projects-grid">
-              {Projects.filter(p => p.id !== projectId)
+              {Projects.filter((p) => p.id !== projectId)
                 .slice(0, 3)
                 .map((relatedProject) => (
-                  <div key={relatedProject.id} className="glass-card related-project-card">
+                  <div
+                    key={relatedProject.id}
+                    className="glass-card related-project-card"
+                  >
                     <div className="related-project-image">
-                      <img src={relatedProject.thumbnail} alt={relatedProject.title} />
+                      <img
+                        src={relatedProject.thumbnail}
+                        alt={relatedProject.title}
+                      />
                       <div className="overlay">
-                        <a href={`/project/${relatedProject.id}`} className="view-btn">
+                        <a
+                          href={`/project/${relatedProject.id}`}
+                          className="view-btn"
+                        >
                           Xem chi tiết <i className="fa fa-arrow-right"></i>
                         </a>
                       </div>
                     </div>
                     <div className="related-project-info">
                       <h3>{relatedProject.title}</h3>
-                      <p className="location"><i className="fa fa-map-marker"></i> {relatedProject.location}</p>
-                      <p className="acreage"><i className="fa fa-cube"></i> {relatedProject.acreage}</p>
+                      <p className="location">
+                        <i className="fa fa-map-marker"></i>{" "}
+                        {relatedProject.location}
+                      </p>
+                      <p className="acreage">
+                        <i className="fa fa-cube"></i> {relatedProject.acreage}
+                      </p>
                     </div>
                   </div>
                 ))}
@@ -237,7 +266,10 @@ const ProjectDetailPage = () => {
           <div className="project-cta-section">
             <div className="cta-content">
               <h2>Bạn quan tâm dự án này?</h2>
-              <p>Hãy liên hệ với chúng tôi để nhận được tư vấn chi tiết và hỗ trợ tốt nhất</p>
+              <p>
+                Hãy liên hệ với chúng tôi để nhận được tư vấn chi tiết và hỗ trợ
+                tốt nhất
+              </p>
               <div className="cta-buttons">
                 <a href="/contact" className="btn-primary">
                   <i className="fa fa-envelope-o"></i> Liên hệ ngay
