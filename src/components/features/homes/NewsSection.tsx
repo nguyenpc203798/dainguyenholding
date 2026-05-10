@@ -17,6 +17,40 @@ interface NewsItem {
 const NewsSection = () => {
   const newsList: NewsItem[] = [
     {
+      id: 7,
+      image:
+        "https://images2.thanhnien.vn/thumb_w/640/528068263637045248/2026/5/9/sg1-17783385859131004592895.png",
+      alt: "Bắc Sài Gòn - Đánh thức vùng đất tiềm năng",
+      url: "https://thanhnien.vn/bac-sai-gon-danh-thuc-vung-dat-tiem-nang-khoi-dau-hanh-trinh-chinh-phuc-moi-185260509220039706.htm",
+      category: "Dự án mới",
+      price: "Khu đô thị",
+      title: "Bắc Sài Gòn - Đánh thức vùng đất tiềm năng, khởi đầu hành trình chinh phục mới",
+      details: [
+        { label: "Địa điểm", value: "Phước Hòa, Bắc TP.HCM" },
+        { label: "Chủ đầu tư", value: "Phương Trường An Group" },
+        { label: "Loại hình", value: "Khu đô thị" },
+        { label: "Tính chất", value: "Đô thị vệ tinh" },
+        { label: "Trạng thái", value: "Sắp ra mắt" },
+      ],
+    },
+    {
+      id: 8,
+      image:
+        "https://cdn.tienphong.vn/images/eab8b646a89980b0d6c6a8534eb7e3855f3fa965c9e766177ad90a8f4d6eb7054dba0f564c02e09b404a4153d013f64b329cc458c26300a02ae48c395bb06a61c95d83e73c20fb80217f76f6efd4ef581f8607e14296cac73dfc0ab2172320fedd3b4686644cc590c6e2a6fd5ed8f554512cd87e57fc009e9122403a7e2eceb8fe428f03ad3edd9ac962e97c52291dc4a3d029edaae801f3db040a8a35173aa3/abaejg257b3zyesxyv-p9b-dvo1u3fll3iu9agbzwk90pvmwadn4udo7ygbux9anwxwabgm2eu0oqot0odsnei-nszclycywv14zdxl30ndt5-ow1j6w3gq5.jpg.avif",
+      alt: "Tái cấu trúc đô thị Bắc TPHCM",
+      url: "https://tienphong.vn/tai-cau-do-thi-bac-tphcm-cu-hich-ty-do-tu-von-dau-tu-cong-post1841324.tpo",
+      category: "Quy hoạch",
+      price: "Tỷ đô",
+      title: "Tái cấu trúc đô thị Bắc TPHCM: 'Cú hích' tỷ đô từ vốn đầu tư công",
+      details: [
+        { label: "Địa điểm", value: "Bắc TP.HCM (Bắc Bình Dương)" },
+        { label: "Định hướng", value: "Đông Nam Bộ đến 2030" },
+        { label: "Mục tiêu", value: "Đô thị công nghiệp" },
+        { label: "Nguồn vốn", value: "Đầu tư công" },
+        { label: "Kỳ vọng", value: "Tái cấu trúc không gian" },
+      ],
+    },
+    {
       id: 1,
       image:
         "https://i1-vnexpress.vnecdn.net/2025/11/30/2890752822393989801-1764472255-3671-1764472674.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=uPRZmXS4TK3agN15Adn5Pg",
