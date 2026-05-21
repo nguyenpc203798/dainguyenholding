@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.css";
 import "./css/fontawesome.css";
 import Providers from "@/components/layout/Providers";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const robotos = Roboto({
   weight: ["300", "400", "500", "600", "700"],
@@ -127,6 +128,7 @@ export default function RootLayout({
     <html lang="vi">
       <body className={robotos.className}>
         <Providers>{children}</Providers>
+        <SpeedInsights />
       </body>
     </html>
   );
