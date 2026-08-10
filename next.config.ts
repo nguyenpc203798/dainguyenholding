@@ -20,6 +20,10 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "khudothibacsaigon.com",
       },
+      {
+        protocol: "https",
+        hostname: "lavelagarden.vn",
+      },
     ],
     // Tăng timeout cho image optimization
     minimumCacheTTL: 60,

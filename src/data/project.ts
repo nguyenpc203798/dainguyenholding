@@ -751,4 +751,109 @@ export const Projects: Project[] = [
       },
     },
   },
+  {
+    id: 8,
+    title: "LAVELA GARDEN",
+    acreage: "1,25 ha",
+    year: "Đang cập nhật",
+    investors: "Công ty TNHH Đầu tư và Xây dựng Ngọc Lễ",
+    thumbnail:
+      "https://lavelagarden.vn/wp-content/uploads/2025/12/phoi-canh-du-an.jpg",
+    location: "P. Bình Chuẩn, TP. Thuận An, Bình Dương",
+    sections: {
+      introduction: {
+        title: "GIỚI THIỆU",
+        content: [
+          "Lavela Garden (tên pháp lý: Khu nhà ở Ngọc Lễ 1) là dự án nhà phố thương mại tại mặt tiền đường Bình Chuẩn 69, phường Bình Chuẩn, TP. Thuận An, Bình Dương.",
+          "Với quy mô khoảng 1,25 ha và hơn 80 căn nhà phố liền kề, dự án mang đến không gian sống hiện đại, mật độ xây dựng thấp, phù hợp cả an cư và đầu tư.",
+          "Liền kề công viên trung tâm Bình Chuẩn rộng khoảng 3 ha, Lavela Garden nổi bật nhờ mảng xanh, hạ tầng đồng bộ và tiềm năng kết nối giao thông khu vực Thuận An.",
+        ],
+        images: [
+          "https://lavelagarden.vn/wp-content/uploads/2025/12/phoi-canh-du-an.jpg",
+        ],
+      },
+      overview: {
+        title: "TỔNG QUAN DỰ ÁN",
+        ten: "Lavela Garden (Khu nhà ở Ngọc Lễ 1)",
+        vitri:
+          "Đường Bình Chuẩn 69, phường Bình Chuẩn, TP. Thuận An, Bình Dương",
+        chudautu: "Công ty TNHH Đầu tư và Xây dựng Ngọc Lễ",
+        donviphattrien: "CÔNG TY TNHH ĐẦU TƯ VÀ DỊCH VỤ ĐẠI NGUYÊN HOLDING",
+        tongdientich: "Khoảng 12.572,7 m2 (tương đương 1,25 ha)",
+        loaihinh: "Nhà phố thương mại liền kề",
+        quymoxd:
+          "Khoảng 82 - 83 căn nhà phố, chia 4 phân khu A, B, C, D",
+        dientichnha:
+          "Diện tích đất khoảng 60 - 100 m2; thiết kế 1 trệt 1 lầu hoặc 1 trệt 2 lầu có sân thượng.",
+        tienich:
+          "Công viên nội khu, khu vui chơi trẻ em, dụng cụ thể thao, shophouse, chuỗi tiện ích ngoại khu tại trung tâm Bình Chuẩn – Thuận An.",
+        csht:
+          "Hạ tầng đồng bộ: đường nội bộ, điện nước âm, chiếu sáng công cộng, viễn thông.",
+        phaply: "Sổ hồng sở hữu lâu dài, pháp lý minh bạch.",
+        quymo:
+          "Quy mô khoảng 1,25 ha với mật độ xây dựng khoảng 42%, không gian sống thoáng đãng.",
+        thoigian: "Đang cập nhật tiến độ và chính sách bán hàng.",
+        images: [
+          "https://lavelagarden.vn/wp-content/uploads/2025/12/phoi-canh-du-an.jpg",
+        ],
+      },
+      location: {
+        title: "VỊ TRÍ DỰ ÁN",
+        content: [
+          "Lavela Garden tọa lạc mặt tiền đường quy hoạch Bình Chuẩn 69, phường Bình Chuẩn – một trong những khu vực dân cư đông đúc của TP. Thuận An.",
+          "Dự án kết nối thuận tiện tới các trục giao thông huyết mạch như ĐT 743, Mỹ Phước – Tân Vạn, Quốc lộ 13 và các tuyến nội thị Thuận An.",
+          "Từ vị trí dự án, cư dân dễ dàng tiếp cận trung tâm TP. Thuận An, Thủ Dầu Một, Dĩ An và TP. Hồ Chí Minh trong bán kính kết nối thuận lợi.",
+          "Liền kề công viên khu vực Bình Chuẩn khoảng 3 ha, mang lại lợi thế cảnh quan và chất lượng sống vượt trội.",
+        ],
+        images: [
+          "https://lavelagarden.vn/wp-content/uploads/2025/12/phoi-canh-du-an.jpg",
+        ],
+      },
+      amenities: {
+        title: "TIỆN ÍCH",
+        content: [
+          "Tiện ích nội khu gồm công viên cây xanh, khu vui chơi trẻ em, dụng cụ thể dục thể thao và các không gian sinh hoạt cộng đồng.",
+          "Mật độ xây dựng thấp (khoảng 42%) kết hợp công viên nội khu giúp không gian sống thông thoáng, gần gũi thiên nhiên.",
+          "Cư dân thừa hưởng hệ thống tiện ích ngoại khu phong phú tại Bình Chuẩn – Thuận An: trường học, y tế, thương mại, dịch vụ giải trí.",
+          "Vị trí gần các khu công nghiệp lớn khu vực giúp gia tăng nhu cầu an cư và tiềm năng khai thác cho thuê.",
+        ],
+        images: [
+          "https://lavelagarden.vn/wp-content/uploads/2025/12/tien-ich-du-an-lavela.jpg",
+        ],
+      },
+      floorPlan: {
+        title: "MẪU NHÀ & MẶT BẰNG",
+        content: [
+          "Dự án được quy hoạch thành 4 phân khu A, B, C, D với quỹ sản phẩm nhà phố đa dạng.",
+          "Diện tích đất khoảng 60 - 100 m2, phù hợp nhu cầu ở thực, kinh doanh và đầu tư.",
+          "Mẫu nhà thiết kế hiện đại với phương án 1 trệt 1 lầu hoặc 1 trệt 2 lầu có sân thượng, tối ưu công năng sử dụng.",
+          "Hạ tầng nội khu bố trí khoa học, đảm bảo giao thông thông thoáng và mỹ quan đô thị.",
+        ],
+        images: [
+          "https://lavelagarden.vn/wp-content/uploads/2025/12/mau-nha-lavela-1536x1256.jpg",
+        ],
+      },
+      legal: {
+        title: "PHÁP LÝ & THANH TOÁN",
+        content: [
+          "Lavela Garden sở hữu pháp lý minh bạch với sổ hồng sở hữu lâu dài, tạo sự an tâm cho khách hàng.",
+          "Dự án được triển khai trên nền tảng quy hoạch rõ ràng, phù hợp định hướng phát triển đô thị khu vực Bình Chuẩn – Thuận An.",
+          "Chính sách thanh toán linh hoạt theo tiến độ, hỗ trợ khách hàng dễ dàng tiếp cận sản phẩm.",
+          "Phù hợp cả khách hàng mua ở thực và nhà đầu tư tìm kiếm kênh đầu tư bền vững tại Thuận An.",
+        ],
+        images: [
+          "https://lavelagarden.vn/wp-content/uploads/2025/12/tien-do-thanh-toan-Lavela-Garden.png",
+        ],
+      },
+      contact: {
+        title: "LIÊN HỆ",
+        content: [
+          "Liên hệ với nhà phát triển, phân phối chính thức CÔNG TY TNHH ĐẦU TƯ VÀ DỊCH VỤ ĐẠI NGUYÊN HOLDING để nhận tư vấn chi tiết về Lavela Garden.",
+          "Hotline: 0779 075 168",
+          "Email: dainguyenholding@gmail.com",
+          "Website dự án: https://lavelagarden.vn/",
+        ],
+      },
+    },
+  },
 ];
